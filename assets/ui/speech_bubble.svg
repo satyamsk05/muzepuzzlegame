@@ -1,0 +1,8 @@
+<svg viewBox="0 0 160 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="bubbleDrop" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <path filter="url(#bubbleDrop)" d="M25 4C13.402 4 4 13.402 4 25C4 36.598 13.402 46 25 46H120L145 60L135 46H135C146.598 46 156 36.598 156 25C156 13.402 146.598 4 135 4H25Z" fill="#FFFFFF"/>
+</svg>

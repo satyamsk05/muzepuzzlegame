@@ -1,0 +1,14 @@
+<svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="rocketBody" x1="16" y1="4" x2="16" y2="28" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#60A5FA"/>
+      <stop offset="100%" stop-color="#3B82F6"/>
+    </linearGradient>
+  </defs>
+  <path d="M16 3C11 7 9 14 9 20C9 23 11 25 14 25H18C21 25 23 23 23 20C23 14 21 7 16 3Z" fill="url(#rocketBody)"/>
+  <circle cx="16" cy="13" r="3.5" fill="#E0F2FE" stroke="#0284C7" stroke-width="1.5"/>
+  <path d="M9 18L4 21C4 21 5 25 8 26L10 23" fill="#38BDF8"/>
+  <path d="M23 18L28 21C28 21 27 25 24 26L22 23" fill="#38BDF8"/>
+  <path d="M14 25L16 29L18 25" fill="#F97316"/>
+  <path d="M15 25L16 27.5L17 25" fill="#FDE047"/>
+</svg>

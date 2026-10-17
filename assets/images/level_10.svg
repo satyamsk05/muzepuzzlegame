@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 390" width="650" height="390">
+    <defs>
+      <linearGradient id="sky10" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#bde0fe"/>
+        <stop offset="100%" stop-color="#e8f4f8"/>
+      </linearGradient>
+    </defs>
+    <rect width="650" height="390" fill="url(#sky10)"/>
+    <!-- Rainbow Arcs -->
+    <g transform="translate(325, 300)">
+      <circle cx="0" cy="0" r="270" fill="none" stroke="#e63946" stroke-width="14"/>
+      <circle cx="0" cy="0" r="256" fill="none" stroke="#f4a261" stroke-width="14"/>
+      <circle cx="0" cy="0" r="242" fill="none" stroke="#ffb703" stroke-width="14"/>
+      <circle cx="0" cy="0" r="228" fill="none" stroke="#52b788" stroke-width="14"/>
+      <circle cx="0" cy="0" r="214" fill="none" stroke="#00b4d8" stroke-width="14"/>
+      <circle cx="0" cy="0" r="200" fill="none" stroke="#0077b6" stroke-width="14"/>
+      <circle cx="0" cy="0" r="186" fill="none" stroke="#7209b7" stroke-width="14"/>
+    </g>
+    <!-- Rolling Green Hills Foreground -->
+    <ellipse cx="100" cy="380" rx="260" ry="120" fill="#70e000"/>
+    <ellipse cx="550" cy="380" rx="280" ry="130" fill="#38b000"/>
+    <ellipse cx="325" cy="400" rx="300" ry="110" fill="#007200"/>
+    <!-- Clouds over Rainbow ends -->
+    <g transform="translate(90, 270)">
+      <circle cx="-25" cy="0" r="30" fill="#ffffff"/>
+      <circle cx="10" cy="-15" r="38" fill="#ffffff"/>
+      <circle cx="45" cy="5" r="28" fill="#ffffff"/>
+    </g>
+    <g transform="translate(560, 270)">
+      <circle cx="-35" cy="5" r="28" fill="#ffffff"/>
+      <circle cx="0" cy="-15" r="38" fill="#ffffff"/>
+      <circle cx="35" cy="0" r="30" fill="#ffffff"/>
+    </g>
+  </svg>

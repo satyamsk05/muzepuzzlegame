@@ -1,0 +1,11 @@
+<svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="chartGrad" x1="16" y1="6" x2="16" y2="26" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#F43F5E"/>
+      <stop offset="100%" stop-color="#BE123C"/>
+    </linearGradient>
+  </defs>
+  <rect x="6" y="16" width="5" height="10" rx="2.5" fill="url(#chartGrad)"/>
+  <rect x="13.5" y="10" width="5" height="16" rx="2.5" fill="url(#chartGrad)"/>
+  <rect x="21" y="6" width="5" height="20" rx="2.5" fill="url(#chartGrad)"/>
+</svg>

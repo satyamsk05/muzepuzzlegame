@@ -1,0 +1,15 @@
+# Godot 4+ specific ignores
+.godot/
+
+# Build artifacts & exported APKs
+build/
+*.apk
+*.apk.idsig
+
+# Antigravity IDE local configuration
+.agents/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+*.tmp

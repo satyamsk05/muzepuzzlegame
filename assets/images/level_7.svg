@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 390" width="650" height="390">
+    <rect width="650" height="390" fill="#a0c4ff"/>
+    <!-- Mountains in background -->
+    <polygon points="-20,260 140,110 280,260" fill="#588157"/>
+    <polygon points="200,260 380,80 540,260" fill="#3a5a40"/>
+    <polygon points="450,260 560,140 680,260" fill="#588157"/>
+    <!-- Snowcaps -->
+    <polygon points="380,80 350,120 410,120" fill="#f8f9fa"/>
+    <!-- Ground -->
+    <rect y="260" width="650" height="130" fill="#a7c957"/>
+    <!-- Rail Tracks -->
+    <line x1="0" y1="315" x2="650" y2="315" stroke="#495057" stroke-width="6"/>
+    <line x1="0" y1="330" x2="650" y2="330" stroke="#495057" stroke-width="6"/>
+    <!-- Sleepers -->
+    <line x1="10" y1="310" x2="10" y2="335" stroke="#6c584c" stroke-width="5"/><line x1="40" y1="310" x2="40" y2="335" stroke="#6c584c" stroke-width="5"/><line x1="70" y1="310" x2="70" y2="335" stroke="#6c584c" stroke-width="5"/><line x1="100" y1="310" x2="100" y2="335" stroke="#6c584c" stroke-width="5"/><line x1="130" y1="310" x2="130" y2="335" stroke="#6c584c" stroke-width="5"/><line x1="160" y1="310" x2="160" y2="335" stroke="#6c584c" stroke-width="5"/><line x1="190" y1="310" x2="190" y2="335" stroke="#6c584c" stroke-width="5"/><line x1="220" y1="310" x2="220" y2="335" stroke="#6c584c" stroke-width="5"/><line x1="250" y1="310" x2="250" y2="335" stroke="#6c584c" stroke-width="5"/><line x1="280" y1="310" x2="280" y2="335" stroke="#6c584c" stroke-width="5"/><line x1="310" y1="310" x2="310" y2="335" stroke="#6c584c" stroke-width="5"/><line x1="340" y1="310" x2="340" y2="335" stroke="#6c584c" stroke-width="5"/><line x1="370" y1="310" x2="370" y2="335" stroke="#6c584c" stroke-width="5"/><line x1="400" y1="310" x2="400" y2="335" stroke="#6c584c" stroke-width="5"/><line x1="430" y1="310" x2="430" y2="335" stroke="#6c584c" stroke-width="5"/><line x1="460" y1="310" x2="460" y2="335" stroke="#6c584c" stroke-width="5"/><line x1="490" y1="310" x2="490" y2="335" stroke="#6c584c" stroke-width="5"/><line x1="520" y1="310" x2="520" y2="335" stroke="#6c584c" stroke-width="5"/><line x1="550" y1="310" x2="550" y2="335" stroke="#6c584c" stroke-width="5"/><line x1="580" y1="310" x2="580" y2="335" stroke="#6c584c" stroke-width="5"/><line x1="610" y1="310" x2="610" y2="335" stroke="#6c584c" stroke-width="5"/><line x1="640" y1="310" x2="640" y2="335" stroke="#6c584c" stroke-width="5"/>
+    <!-- Steam Locomotive Train -->
+    <g transform="translate(180, 175)">
+      <!-- Steam Clouds -->
+      <circle cx="190" cy="-20" r="22" fill="#ffffff" opacity="0.85"/>
+      <circle cx="230" cy="-45" r="30" fill="#ffffff" opacity="0.75"/>
+      <circle cx="280" cy="-70" r="38" fill="#ffffff" opacity="0.6"/>
+      <!-- Cab (Rear) -->
+      <rect x="0" y="20" width="90" height="110" rx="4" fill="#d90429"/>
+      <rect x="15" y="35" width="45" height="40" rx="4" fill="#e0fbfc"/>
+      <!-- Boiler (Front) -->
+      <rect x="90" y="45" width="120" height="85" fill="#1d3557"/>
+      <polygon points="210,45 235,80 235,130 210,130" fill="#e63946"/>
+      <!-- Chimney / Smokestack -->
+      <polygon points="170,45 190,45 195,5 165,5" fill="#343a40"/>
+      <!-- Headlight -->
+      <circle cx="238" cy="90" r="10" fill="#ffe66d"/>
+      <!-- Wheels -->
+      <circle cx="35" cy="135" r="24" fill="#212529" stroke="#adb5bd" stroke-width="6"/>
+      <circle cx="95" cy="135" r="24" fill="#212529" stroke="#adb5bd" stroke-width="6"/>
+      <circle cx="155" cy="135" r="24" fill="#212529" stroke="#adb5bd" stroke-width="6"/>
+      <circle cx="205" cy="143" r="16" fill="#212529" stroke="#adb5bd" stroke-width="5"/>
+      <line x1="35" y1="135" x2="155" y2="135" stroke="#f8f9fa" stroke-width="6"/>
+    </g>
+  </svg>

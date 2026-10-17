@@ -1,0 +1,140 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="Script" path="res://scripts/loading_screen.gd" id="1_loading_script"]
+[ext_resource type="Shader" path="res://scripts/black_to_transparent.gdshader" id="2_shader"]
+[ext_resource type="Texture2D" path="res://assets/ui/rocket_mascot.jpg" id="3_mascot_tex"]
+[ext_resource type="Texture2D" path="res://assets/ui/space_cloud.svg" id="4_cloud_tex"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_mascot"]
+shader = ExtResource("2_shader")
+shader_parameter/threshold = 0.06
+shader_parameter/softness = 0.12
+
+[sub_resource type="Gradient" id="Gradient_space"]
+colors = PackedColorArray(0.04, 0.04, 0.11, 1, 0.08, 0.07, 0.18, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_space"]
+gradient = SubResource("Gradient_space")
+fill_from = Vector2(0.5, 0)
+fill_to = Vector2(0.5, 1)
+
+[node name="LoadingScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_loading_script")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("GradientTexture2D_space")
+
+[node name="Cloud1" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 320.0
+offset_right = 200.0
+offset_bottom = 390.0
+texture = ExtResource("4_cloud_tex")
+expand_mode = 1
+
+[node name="Cloud2" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 480.0
+offset_top = 280.0
+offset_right = 620.0
+offset_bottom = 350.0
+texture = ExtResource("4_cloud_tex")
+expand_mode = 1
+
+[node name="Star1" type="Label" parent="."]
+layout_mode = 0
+offset_left = 140.0
+offset_top = 240.0
+offset_right = 160.0
+offset_bottom = 266.0
+theme_override_colors/font_color = Color(0.4, 0.7, 1, 0.6)
+theme_override_font_size/font_size = 16
+text = "✦"
+
+[node name="Star2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 540.0
+offset_top = 200.0
+offset_right = 560.0
+offset_bottom = 226.0
+theme_override_colors/font_color = Color(0.7, 0.5, 1, 0.6)
+theme_override_font_size/font_size = 18
+text = "✦"
+
+[node name="Star3" type="Label" parent="."]
+layout_mode = 0
+offset_left = 580.0
+offset_top = 680.0
+offset_right = 600.0
+offset_bottom = 706.0
+theme_override_colors/font_color = Color(0.5, 0.8, 1, 0.6)
+theme_override_font_size/font_size = 14
+text = "✦"
+
+[node name="Center" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBox" type="VBoxContainer" parent="Center"]
+layout_mode = 2
+theme_override_constants/separation = 28
+alignment = 1
+
+[node name="MascotWrapper" type="Control" parent="Center/VBox"]
+custom_minimum_size = Vector2(300, 320)
+layout_mode = 2
+
+[node name="Mascot" type="TextureRect" parent="Center/VBox/MascotWrapper"]
+material = SubResource("ShaderMaterial_mascot")
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -150.0
+offset_top = -160.0
+offset_right = 150.0
+offset_bottom = 160.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(150, 160)
+texture = ExtResource("3_mascot_tex")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="LoadingTitle" type="Label" parent="Center/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_size/font_size = 28
+text = "LOADING..."
+horizontal_alignment = 1
+
+[node name="TipLabel" type="Label" parent="Center/VBox"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.82, 0.86, 0.94, 0.9)
+theme_override_constants/line_spacing = 8
+theme_override_font_size/font_size = 20
+text = "Some things are impossible to count...
+Like stars. Or grains of sand.
+So let's count apples instead."
+horizontal_alignment = 1
+autowrap_mode = 2

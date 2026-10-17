@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 390" width="650" height="390">
+    <!-- Deep jungle foliage backdrop -->
+    <rect width="650" height="390" fill="#1b4332"/>
+    <!-- Layered Canopy -->
+    <ellipse cx="80" cy="60" rx="140" ry="100" fill="#2d6a4f"/>
+    <ellipse cx="320" cy="40" rx="180" ry="90" fill="#40916c"/>
+    <ellipse cx="560" cy="70" rx="150" ry="100" fill="#2d6a4f"/>
+    <!-- Waterfall in background -->
+    <path d="M 270 90 L 350 90 L 370 390 L 250 390 Z" fill="#52b788"/>
+    <path d="M 285 90 L 335 90 L 350 390 L 270 390 Z" fill="#90e0ef"/>
+    <path d="M 298 90 L 322 90 L 330 390 L 290 390 Z" fill="#ffffff" opacity="0.8"/>
+    <!-- Giant Tropical Monstera Leaves & Vines -->
+    <path d="M -20 220 C 120 180 180 320 220 390" stroke="#74c69d" stroke-width="16" fill="none"/>
+    <ellipse cx="140" cy="270" rx="70" ry="40" fill="#52b788" transform="rotate(-30 140 270)"/>
+    <!-- Toucan Sitting on branch (Right) -->
+    <g transform="translate(460, 210)">
+      <!-- Branch -->
+      <rect x="-80" y="45" width="220" height="18" rx="8" fill="#5c4033"/>
+      <!-- Body -->
+      <ellipse cx="0" cy="0" rx="36" ry="48" fill="#111111"/>
+      <ellipse cx="-12" cy="0" rx="20" ry="28" fill="#ffb703"/>
+      <!-- Eye -->
+      <circle cx="-16" cy="-24" r="7" fill="#00b4d8"/>
+      <circle cx="-16" cy="-24" r="3" fill="#111111"/>
+      <!-- Giant Colorful Bill / Beak -->
+      <path d="M -26 -32 C -80 -35 -110 -15 -105 10 C -70 12 -40 5 -26 -5 Z" fill="#ff7b00"/>
+      <path d="M -105 10 C -95 -5 -80 -15 -60 -18 L -65 8 Z" fill="#d90429"/>
+      <!-- Tail -->
+      <polygon points="20,25 45,95 10,85" fill="#111111"/>
+      <polygon points="20,25 35,45 10,35" fill="#d90429"/>
+    </g>
+  </svg>

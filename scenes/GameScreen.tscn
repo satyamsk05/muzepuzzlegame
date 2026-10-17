@@ -1,0 +1,310 @@
+[gd_scene load_steps=6 format=3 uid="uid://e4n0x18q5y9u"]
+
+[ext_resource type="Script" path="res://scripts/game_screen.gd" id="1_game_screen_script"]
+[ext_resource type="PackedScene" path="res://scenes/PuzzleBoard.tscn" id="2_puzzle_board_scene"]
+
+[sub_resource type="Gradient" id="Gradient_pastel"]
+colors = PackedColorArray(0.89, 0.94, 0.99, 1, 0.95, 0.92, 0.98, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_bg"]
+gradient = SubResource("Gradient_pastel")
+fill_from = Vector2(0.5, 0)
+fill_to = Vector2(0.5, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_card"]
+bg_color = Color(1, 1, 1, 0.95)
+corner_radius_top_left = 22
+corner_radius_top_right = 22
+corner_radius_bottom_right = 22
+corner_radius_bottom_left = 22
+shadow_color = Color(0.1, 0.18, 0.35, 0.08)
+shadow_size = 12
+shadow_offset = Vector2(0, 5)
+
+[node name="GameScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_game_screen_script")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("GradientTexture2D_bg")
+
+[node name="TopArea" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 24.0
+offset_top = 36.0
+offset_right = -24.0
+offset_bottom = 350.0
+grow_horizontal = 2
+theme_override_constants/separation = 12
+
+[node name="Header" type="HBoxContainer" parent="TopArea"]
+layout_mode = 2
+
+[node name="BackButton" type="Button" parent="TopArea/Header"]
+custom_minimum_size = Vector2(110, 46)
+layout_mode = 2
+theme_override_font_sizes/font_size = 16
+text = "Menu"
+expand_icon = true
+
+[node name="LevelCard" type="PanelContainer" parent="TopArea/Header"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_card")
+
+[node name="VBox" type="VBoxContainer" parent="TopArea/Header/LevelCard"]
+layout_mode = 2
+alignment = 1
+
+[node name="LevelTitle" type="Label" parent="TopArea/Header/LevelCard/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.1, 0.22, 0.45, 1)
+theme_override_font_sizes/font_size = 18
+text = "Level 1: Garden Windmill"
+horizontal_alignment = 1
+
+[node name="BestRecord" type="Label" parent="TopArea/Header/LevelCard/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.35, 0.5, 0.65, 1)
+theme_override_font_sizes/font_size = 13
+text = "Best: --"
+horizontal_alignment = 1
+
+[node name="SoundButton" type="Button" parent="TopArea/Header"]
+custom_minimum_size = Vector2(130, 46)
+layout_mode = 2
+theme_override_font_sizes/font_size = 15
+text = "Sound: OFF"
+expand_icon = true
+
+[node name="PreviewCard" type="PanelContainer" parent="TopArea"]
+custom_minimum_size = Vector2(260, 150)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_styles/panel = SubResource("StyleBoxFlat_card")
+
+[node name="VBox" type="VBoxContainer" parent="TopArea/PreviewCard"]
+layout_mode = 2
+theme_override_constants/separation = 6
+alignment = 1
+
+[node name="PreviewLabel" type="Label" parent="TopArea/PreviewCard/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.3, 0.45, 0.65, 1)
+theme_override_font_sizes/font_size = 14
+text = "Target Picture"
+horizontal_alignment = 1
+
+[node name="CenterBox" type="CenterContainer" parent="TopArea/PreviewCard/VBox"]
+layout_mode = 2
+
+[node name="PreviewFrame" type="PanelContainer" parent="TopArea/PreviewCard/VBox/CenterBox"]
+custom_minimum_size = Vector2(184, 114)
+layout_mode = 2
+
+[node name="PreviewTexture" type="TextureRect" parent="TopArea/PreviewCard/VBox/CenterBox/PreviewFrame"]
+custom_minimum_size = Vector2(180, 110)
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="BoardContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -345.0
+offset_top = -60.0
+offset_right = 345.0
+offset_bottom = 400.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PuzzleBoard" parent="BoardContainer" instance=ExtResource("2_puzzle_board_scene")]
+layout_mode = 2
+
+[node name="StatsCard" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 32.0
+offset_top = -236.0
+offset_right = -32.0
+offset_bottom = -166.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_card")
+
+[node name="HBox" type="HBoxContainer" parent="StatsCard"]
+layout_mode = 2
+alignment = 1
+
+[node name="MovesBox" type="HBoxContainer" parent="StatsCard/HBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 8
+alignment = 1
+
+[node name="MovesIcon" type="TextureRect" parent="StatsCard/HBox/MovesBox"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+size_flags_vertical = 4
+expand_mode = 1
+stretch_mode = 5
+
+[node name="MovesLabel" type="Label" parent="StatsCard/HBox/MovesBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.12, 0.22, 0.45, 1)
+theme_override_font_sizes/font_size = 22
+text = "Moves: 0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VSeparator" type="VSeparator" parent="StatsCard/HBox"]
+layout_mode = 2
+
+[node name="TimerBox" type="HBoxContainer" parent="StatsCard/HBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 8
+alignment = 1
+
+[node name="TimerIcon" type="TextureRect" parent="StatsCard/HBox/TimerBox"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+size_flags_vertical = 4
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TimerLabel" type="Label" parent="StatsCard/HBox/TimerBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.12, 0.22, 0.45, 1)
+theme_override_font_sizes/font_size = 22
+text = "00:00"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonsArea" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 32.0
+offset_top = -145.0
+offset_right = -32.0
+offset_bottom = -65.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 18
+alignment = 1
+
+[node name="RestartButton" type="Button" parent="ButtonsArea"]
+custom_minimum_size = Vector2(0, 64)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 19
+text = "Reset"
+expand_icon = true
+
+[node name="ShuffleButton" type="Button" parent="ButtonsArea"]
+custom_minimum_size = Vector2(0, 64)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 19
+text = "New Shuffle"
+expand_icon = true
+
+[node name="WinOverlay" type="ColorRect" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.08, 0.12, 0.22, 0.7)
+
+[node name="CenterContainer" type="CenterContainer" parent="WinOverlay"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="WinCard" type="PanelContainer" parent="WinOverlay/CenterContainer"]
+custom_minimum_size = Vector2(540, 390)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_card")
+
+[node name="VBox" type="VBoxContainer" parent="WinOverlay/CenterContainer/WinCard"]
+layout_mode = 2
+theme_override_constants/separation = 18
+alignment = 1
+
+[node name="TrophyCenter" type="CenterContainer" parent="WinOverlay/CenterContainer/WinCard/VBox"]
+layout_mode = 2
+
+[node name="TrophyIcon" type="TextureRect" parent="WinOverlay/CenterContainer/WinCard/VBox/TrophyCenter"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="WinTitle" type="Label" parent="WinOverlay/CenterContainer/WinCard/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.08, 0.65, 0.38, 1)
+theme_override_font_sizes/font_size = 30
+text = "Puzzle Solved!"
+horizontal_alignment = 1
+
+[node name="WinStats" type="Label" parent="WinOverlay/CenterContainer/WinCard/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.2, 0.3, 0.45, 1)
+theme_override_font_sizes/font_size = 20
+text = "Completed in 24 moves!
+Time: 00:35"
+horizontal_alignment = 1
+
+[node name="Buttons" type="VBoxContainer" parent="WinOverlay/CenterContainer/WinCard/VBox"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="NextLevelBtn" type="Button" parent="WinOverlay/CenterContainer/WinCard/VBox/Buttons"]
+custom_minimum_size = Vector2(0, 58)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Next Level"
+expand_icon = true
+
+[node name="PlayAgainBtn" type="Button" parent="WinOverlay/CenterContainer/WinCard/VBox/Buttons"]
+custom_minimum_size = Vector2(0, 52)
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "Play Again"
+expand_icon = true
+
+[connection signal="pressed" from="TopArea/Header/BackButton" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="TopArea/Header/SoundButton" to="." method="_on_sound_button_pressed"]
+[connection signal="pressed" from="ButtonsArea/RestartButton" to="." method="_on_restart_button_pressed"]
+[connection signal="pressed" from="ButtonsArea/ShuffleButton" to="." method="_on_shuffle_button_pressed"]
+[connection signal="pressed" from="WinOverlay/CenterContainer/WinCard/VBox/Buttons/NextLevelBtn" to="." method="_on_next_level_pressed"]
+[connection signal="pressed" from="WinOverlay/CenterContainer/WinCard/VBox/Buttons/PlayAgainBtn" to="." method="_on_play_again_pressed"]

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 390" width="650" height="390">
+    <!-- Sunset Sky -->
+    <defs>
+      <linearGradient id="sky9" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#ff758f"/>
+        <stop offset="60%" stop-color="#ffb3c1"/>
+        <stop offset="100%" stop-color="#ffe5d9"/>
+      </linearGradient>
+    </defs>
+    <rect width="650" height="390" fill="url(#sky9)"/>
+    <!-- Green Hill -->
+    <ellipse cx="325" cy="420" rx="420" ry="190" fill="#40916c"/>
+    <!-- Moat Water -->
+    <path d="M 0 350 Q 325 320 650 350 L 650 390 L 0 390 Z" fill="#48cae4"/>
+    <!-- Stone Castle -->
+    <g transform="translate(195, 110)">
+      <!-- Main Wall -->
+      <rect x="50" y="80" width="160" height="110" fill="#8d99ae"/>
+      <!-- Crenellations (Battlements) -->
+      <rect x="60" y="65" width="16" height="18" fill="#8d99ae"/><rect x="85" y="65" width="16" height="18" fill="#8d99ae"/><rect x="110" y="65" width="16" height="18" fill="#8d99ae"/><rect x="135" y="65" width="16" height="18" fill="#8d99ae"/><rect x="160" y="65" width="16" height="18" fill="#8d99ae"/><rect x="185" y="65" width="16" height="18" fill="#8d99ae"/>
+      <!-- Left Tower -->
+      <rect x="0" y="40" width="65" height="150" fill="#6c757d"/>
+      <polygon points="-5,40 32,-15 70,40" fill="#d90429"/>
+      <rect x="30" y="-35" width="5" height="20" fill="#333333"/>
+      <polygon points="35,-35 55,-25 35,-15" fill="#ffd166"/>
+      <!-- Right Tower -->
+      <rect x="195" y="40" width="65" height="150" fill="#6c757d"/>
+      <polygon points="190,40 227,-15 265,40" fill="#d90429"/>
+      <rect x="225" y="-35" width="5" height="20" fill="#333333"/>
+      <polygon points="230,-35 250,-25 230,-15" fill="#ffd166"/>
+      <!-- Central Keep Tower -->
+      <rect x="95" y="20" width="70" height="70" fill="#495057"/>
+      <polygon points="90,20 130,-30 170,20" fill="#118ab2"/>
+      <!-- Arch Gate / Drawbridge -->
+      <path d="M 105 190 L 105 135 Q 130 115 155 135 L 155 190 Z" fill="#343a40"/>
+      <!-- Windows -->
+      <rect x="20" y="80" width="12" height="22" rx="6" fill="#ffeaa7"/>
+      <rect x="228" y="80" width="12" height="22" rx="6" fill="#ffeaa7"/>
+    </g>
+  </svg>

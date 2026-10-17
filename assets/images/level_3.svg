@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 390" width="650" height="390">
+    <defs>
+      <linearGradient id="bg3" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#fff1eb"/>
+        <stop offset="100%" stop-color="#ace0f9"/>
+      </linearGradient>
+    </defs>
+    <rect width="650" height="390" fill="url(#bg3)"/>
+    <!-- Grass field -->
+    <path d="M 0 260 Q 200 240 400 270 Q 550 250 650 260 L 650 390 L 0 390 Z" fill="#55a630"/>
+    <!-- Sun -->
+    <circle cx="90" cy="70" r="40" fill="#ffb703" opacity="0.8"/>
+    <!-- Big Flowers -->
+    <g transform="translate(120, 290)">
+      <line x1="0" y1="0" x2="0" y2="90" stroke="#2d6a4f" stroke-width="8"/>
+      <circle cx="-25" cy="-10" r="18" fill="#ff4d6d"/><circle cx="25" cy="-10" r="18" fill="#ff4d6d"/>
+      <circle cx="0" cy="-30" r="18" fill="#ff4d6d"/><circle cx="-16" cy="18" r="18" fill="#ff4d6d"/><circle cx="16" cy="18" r="18" fill="#ff4d6d"/>
+      <circle cx="0" cy="0" r="15" fill="#ffb703"/>
+    </g>
+    <g transform="translate(530, 280)">
+      <line x1="0" y1="0" x2="0" y2="100" stroke="#2d6a4f" stroke-width="8"/>
+      <circle cx="-25" cy="-10" r="18" fill="#9d4edd"/><circle cx="25" cy="-10" r="18" fill="#9d4edd"/>
+      <circle cx="0" cy="-30" r="18" fill="#9d4edd"/><circle cx="-16" cy="18" r="18" fill="#9d4edd"/><circle cx="16" cy="18" r="18" fill="#9d4edd"/>
+      <circle cx="0" cy="0" r="15" fill="#ffea00"/>
+    </g>
+    <!-- Giant Central Butterfly -->
+    <g transform="translate(325, 160)">
+      <!-- Left wings -->
+      <path d="M 0 -10 C -70 -90 -130 -40 -110 10 C -100 40 -40 30 0 10 Z" fill="#ff758f"/>
+      <path d="M 0 10 C -90 40 -80 110 -20 80 C 0 60 0 20 0 10 Z" fill="#ffb3c1"/>
+      <!-- Right wings -->
+      <path d="M 0 -10 C 70 -90 130 -40 110 10 C 100 40 40 30 0 10 Z" fill="#ff758f"/>
+      <path d="M 0 10 C 90 40 80 110 20 80 C 0 60 0 20 0 10 Z" fill="#ffb3c1"/>
+      <!-- Wing spots -->
+      <circle cx="-65" cy="-20" r="14" fill="#7209b7"/>
+      <circle cx="65" cy="-20" r="14" fill="#7209b7"/>
+      <circle cx="-45" cy="50" r="10" fill="#3a0ca3"/>
+      <circle cx="45" cy="50" r="10" fill="#3a0ca3"/>
+      <!-- Body -->
+      <ellipse cx="0" cy="20" rx="8" ry="42" fill="#2b2d42"/>
+      <circle cx="0" cy="-26" r="10" fill="#2b2d42"/>
+      <!-- Antennae -->
+      <path d="M -3 -35 Q -25 -65 -35 -50" stroke="#2b2d42" stroke-width="3" fill="none"/>
+      <path d="M 3 -35 Q 25 -65 35 -50" stroke="#2b2d42" stroke-width="3" fill="none"/>
+    </g>
+  </svg>

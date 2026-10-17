@@ -1,0 +1,19 @@
+<svg viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="currNodeBase" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="70%" stop-color="#EEF2FF"/>
+      <stop offset="100%" stop-color="#CBD5E1"/>
+    </radialGradient>
+    <filter id="ringGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#818CF8" flood-opacity="0.9"/>
+    </filter>
+  </defs>
+  <!-- Glowing outer circular aura -->
+  <circle cx="70" cy="70" r="64" stroke="#818CF8" stroke-width="5" stroke-dasharray="14 8" filter="url(#ringGlow)" fill="none"/>
+  <!-- 3D bottom rim -->
+  <circle cx="70" cy="76" r="50" fill="#94A3B8"/>
+  <!-- White glossy button face -->
+  <circle cx="70" cy="68" r="50" fill="url(#currNodeBase)"/>
+  <ellipse cx="70" cy="42" rx="36" ry="16" fill="#FFFFFF" fill-opacity="0.8"/>
+</svg>

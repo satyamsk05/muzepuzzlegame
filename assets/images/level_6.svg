@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 390" width="650" height="390">
+    <defs>
+      <linearGradient id="space6" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#0b091a"/>
+        <stop offset="50%" stop-color="#161b33"/>
+        <stop offset="100%" stop-color="#2a0845"/>
+      </linearGradient>
+    </defs>
+    <rect width="650" height="390" fill="url(#space6)"/>
+    <!-- Stars -->
+    <circle cx="50" cy="40" r="2" fill="#ffffff"/><circle cx="120" cy="90" r="3" fill="#ffe066"/>
+    <circle cx="200" cy="30" r="1.5" fill="#ffffff"/><circle cx="280" cy="80" r="2" fill="#ffffff"/>
+    <circle cx="350" cy="40" r="3" fill="#ffe066"/><circle cx="480" cy="50" r="2" fill="#ffffff"/>
+    <circle cx="580" cy="110" r="2" fill="#ffffff"/><circle cx="100" cy="300" r="2" fill="#ffffff"/>
+    <circle cx="440" cy="330" r="2.5" fill="#ffffff"/><circle cx="600" cy="280" r="1.5" fill="#ffffff"/>
+    <!-- Saturn-like Ringed Planet (Top Right) -->
+    <g transform="translate(490, 110)">
+      <ellipse cx="0" cy="0" rx="90" ry="24" fill="none" stroke="#f4a261" stroke-width="12" transform="rotate(-20)" opacity="0.8"/>
+      <circle cx="0" cy="0" r="48" fill="#e76f51"/>
+      <ellipse cx="0" cy="0" rx="90" ry="24" fill="none" stroke="#e9c46a" stroke-width="8" transform="rotate(-20)" stroke-dasharray="80 300"/>
+    </g>
+    <!-- Rocket Ship (Center) -->
+    <g transform="translate(230, 210) rotate(-35)">
+      <!-- Flame -->
+      <polygon points="-16,70 16,70 0,120" fill="#ffb703"/>
+      <polygon points="-8,70 8,70 0,100" fill="#d90429"/>
+      <!-- Body -->
+      <path d="M 0 -80 Q 35 -20 30 70 L -30 70 Q -35 -20 0 -80 Z" fill="#f8f9fa"/>
+      <!-- Red nose -->
+      <path d="M 0 -80 Q 20 -45 23 -35 L -23 -35 Q -20 -45 0 -80 Z" fill="#d90429"/>
+      <!-- Fins -->
+      <polygon points="-30,30 -60,75 -30,65" fill="#d90429"/>
+      <polygon points="30,30 60,75 30,65" fill="#d90429"/>
+      <!-- Porthole Window -->
+      <circle cx="0" cy="-5" r="18" fill="#00b4d8" stroke="#ced4da" stroke-width="5"/>
+      <circle cx="-4" cy="-8" r="5" fill="#ffffff"/>
+    </g>
+  </svg>

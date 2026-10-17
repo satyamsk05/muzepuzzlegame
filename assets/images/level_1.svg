@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 390" width="650" height="390">
+  <defs>
+    <linearGradient id="sky1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4facfe"/>
+      <stop offset="100%" stop-color="#00f2fe"/>
+    </linearGradient>
+    <linearGradient id="hill1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7cd635"/>
+      <stop offset="100%" stop-color="#4ba31d"/>
+    </linearGradient>
+    <linearGradient id="millBody" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e8d5b7"/>
+      <stop offset="100%" stop-color="#bfa588"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="650" height="390" fill="url(#sky1)"/>
+
+  <!-- Sun -->
+  <circle cx="560" cy="80" r="45" fill="#ffe259" opacity="0.9"/>
+  <circle cx="560" cy="80" r="55" fill="#ffa751" opacity="0.3"/>
+
+  <!-- Clouds -->
+  <path d="M 80 90 Q 95 65 125 70 Q 155 55 185 75 Q 215 70 225 90 Z" fill="#ffffff" opacity="0.85"/>
+  <path d="M 380 70 Q 395 50 420 55 Q 445 40 470 60 Q 495 55 505 70 Z" fill="#ffffff" opacity="0.8"/>
+
+  <!-- Distant Hills -->
+  <ellipse cx="200" cy="360" rx="320" ry="140" fill="#5dbb26"/>
+  <ellipse cx="500" cy="380" rx="280" ry="130" fill="url(#hill1)"/>
+
+  <!-- Foreground Hill -->
+  <path d="M -20 390 Q 250 280 670 390 Z" fill="#439b17"/>
+
+  <!-- Windmill Base -->
+  <polygon points="280,330 370,330 350,160 300,160" fill="url(#millBody)"/>
+  <polygon points="285,165 365,165 325,115" fill="#d9534f"/>
+  <!-- Door & Windows -->
+  <rect x="313" y="280" width="24" height="45" rx="5" fill="#5c3821"/>
+  <rect x="315" y="195" width="20" height="25" rx="3" fill="#ffffff" stroke="#5c3821" stroke-width="3"/>
+
+  <!-- Windmill Sails (Blades) -->
+  <g transform="translate(325, 145)">
+    <circle cx="0" cy="0" r="8" fill="#333333"/>
+    <!-- Blade 1 -->
+    <line x1="0" y1="0" x2="0" y2="-90" stroke="#8b5a2b" stroke-width="4"/>
+    <rect x="3" y="-85" width="22" height="75" fill="#f8f9fa" stroke="#8b5a2b" stroke-width="1.5" opacity="0.9"/>
+    <!-- Blade 2 -->
+    <line x1="0" y1="0" x2="90" y2="0" stroke="#8b5a2b" stroke-width="4"/>
+    <rect x="10" y="3" width="75" height="22" fill="#f8f9fa" stroke="#8b5a2b" stroke-width="1.5" opacity="0.9"/>
+    <!-- Blade 3 -->
+    <line x1="0" y1="0" x2="0" y2="90" stroke="#8b5a2b" stroke-width="4"/>
+    <rect x="-25" y="10" width="22" height="75" fill="#f8f9fa" stroke="#8b5a2b" stroke-width="1.5" opacity="0.9"/>
+    <!-- Blade 4 -->
+    <line x1="0" y1="0" x2="-90" y2="0" stroke="#8b5a2b" stroke-width="4"/>
+    <rect x="-85" y="-25" width="75" height="22" fill="#f8f9fa" stroke="#8b5a2b" stroke-width="1.5" opacity="0.9"/>
+  </g>
+
+  <!-- Flowers in Garden -->
+  <circle cx="100" cy="350" r="8" fill="#ff4b4b"/>
+  <circle cx="100" cy="350" r="3" fill="#ffe066"/>
+  <circle cx="140" cy="365" r="9" fill="#ff7675"/>
+  <circle cx="140" cy="365" r="3" fill="#ffe066"/>
+  <circle cx="210" cy="345" r="8" fill="#a29bfe"/>
+  <circle cx="210" cy="345" r="3" fill="#ffe066"/>
+  <circle cx="450" cy="355" r="10" fill="#fd79a8"/>
+  <circle cx="450" cy="355" r="3" fill="#ffe066"/>
+  <circle cx="520" cy="360" r="8" fill="#fab1a0"/>
+  <circle cx="520" cy="360" r="3" fill="#ffe066"/>
+  <circle cx="580" cy="348" r="9" fill="#ff7675"/>
+  <circle cx="580" cy="348" r="3" fill="#ffe066"/>
+</svg>

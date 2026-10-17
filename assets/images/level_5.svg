@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 390" width="650" height="390">
+    <defs>
+      <linearGradient id="ocean5" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#00b4d8"/>
+        <stop offset="60%" stop-color="#0077b6"/>
+        <stop offset="100%" stop-color="#03045e"/>
+      </linearGradient>
+    </defs>
+    <rect width="650" height="390" fill="url(#ocean5)"/>
+    <!-- Sandy bottom with corals -->
+    <path d="M 0 350 Q 200 330 400 350 Q 550 330 650 340 L 650 390 L 0 390 Z" fill="#e9c46a"/>
+    <path d="M 30 360 Q 20 280 60 260 Q 70 300 80 360" fill="#f72585"/>
+    <path d="M 540 360 Q 580 270 550 250 Q 520 290 510 360" fill="#7209b7"/>
+    <!-- Bubbles -->
+    <circle cx="210" cy="220" r="8" fill="#caf0f8" opacity="0.6"/>
+    <circle cx="216" cy="180" r="12" fill="#caf0f8" opacity="0.6"/>
+    <circle cx="212" cy="120" r="16" fill="#caf0f8" opacity="0.6"/>
+    <!-- Cute Clownfish / Tropical Fish (Center) -->
+    <g transform="translate(320, 180)">
+      <ellipse cx="0" cy="0" rx="75" ry="48" fill="#ff7b00"/>
+      <!-- Tail -->
+      <polygon points="-65,0 -120,-35 -105,0 -120,35" fill="#ff7b00"/>
+      <polygon points="-75,0 -115,-25 -105,0 -115,25" fill="#ffffff"/>
+      <!-- White stripes -->
+      <path d="M -15 -46 Q -5 0 -15 46 L -3 46 Q 7 0 -3 -46 Z" fill="#ffffff"/>
+      <path d="M 25 -42 Q 35 0 25 42 L 35 38 Q 45 0 35 -38 Z" fill="#ffffff"/>
+      <!-- Fins -->
+      <path d="M 5 -46 Q 30 -70 50 -42 Z" fill="#ff7b00"/>
+      <path d="M 10 46 Q 30 70 45 42 Z" fill="#ff7b00"/>
+      <!-- Eye -->
+      <circle cx="45" cy="-12" r="10" fill="#ffffff"/>
+      <circle cx="47" cy="-12" r="5" fill="#111111"/>
+    </g>
+    <!-- Starfish -->
+    <polygon points="180,335 186,350 202,352 190,362 194,378 180,368 166,378 170,362 158,352 174,350" fill="#e76f51"/>
+  </svg>

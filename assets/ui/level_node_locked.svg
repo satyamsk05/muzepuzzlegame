@@ -1,0 +1,14 @@
+<svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="lockedBase" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </radialGradient>
+  </defs>
+  <circle cx="60" cy="65" r="46" fill="#0F172A"/>
+  <circle cx="60" cy="58" r="46" fill="url(#lockedBase)"/>
+  <ellipse cx="60" cy="34" rx="30" ry="14" fill="#FFFFFF" fill-opacity="0.08"/>
+  <!-- Silver Lock icon in center -->
+  <rect x="50" y="55" width="20" height="15" rx="3" fill="#64748B"/>
+  <path d="M54 55V50C54 46.686 56.686 44 60 44C63.314 44 66 46.686 66 50V55" stroke="#94A3B8" stroke-width="3" stroke-linecap="round" fill="none"/>
+</svg>
