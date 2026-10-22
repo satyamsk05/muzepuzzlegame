@@ -202,7 +202,7 @@ text = "Counting 1-10"
 layout_mode = 2
 theme_override_colors/font_color = Color(0.65, 0.6, 0.95, 1)
 theme_override_font_size/font_size = 24
-text = "☰"
+text = "="
 
 [node name="ScrollContainer" type="ScrollContainer" parent="."]
 layout_mode = 1

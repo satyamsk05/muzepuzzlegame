@@ -4,7 +4,7 @@ extends Control
 @onready var mascot: TextureRect = $CenterContainer/VBox/MascotWrapper/Mascot
 @onready var bubble: Control = $CenterContainer/VBox/MascotWrapper/Bubble
 @onready var get_started_btn: Button = $BottomContainer/VBox/GetStartedBtn
-@onready var sign_in_btn: Button = $BottomContainer/VBox/SignInBtn
+@onready var play_btn: Button = $BottomContainer/VBox/PlayBtn
 
 var _mascot_base_y: float = 0.0
 var _time: float = 0.0
@@ -14,11 +14,11 @@ func _ready() -> void:
 	_apply_theme_styles()
 	_start_mascot_float()
 	get_started_btn.pressed.connect(_on_get_started_pressed)
-	sign_in_btn.pressed.connect(_on_get_started_pressed)
+	play_btn.pressed.connect(_on_get_started_pressed)
 
 func _apply_theme_styles() -> void:
 	UIStyles.apply_gradient_3d_button(get_started_btn, 24)
-	UIStyles.apply_subtle_text_button(sign_in_btn)
+	UIStyles.apply_subtle_text_button(play_btn)
 
 func _process(delta: float) -> void:
 	_time += delta * 2.5

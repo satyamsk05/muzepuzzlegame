@@ -83,8 +83,8 @@ func _draw() -> void:
 	var ruler_content_width = BOARD_WIDTH
 	var tick_spacing = ruler_content_width / 15.0
 	
-	var font = ThemeDB.fallback_font
-	var font_size = 12
+	var font = get_theme_font("font", "Label")
+	var font_size = maxi(16, int(TILE_HEIGHT * 0.2))
 	
 	for i in range(num_major_ticks):
 		var x = 20.0 + i * tick_spacing

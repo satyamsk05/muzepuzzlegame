@@ -44,7 +44,7 @@ offset_right = 140.0
 offset_bottom = 206.0
 theme_override_colors/font_color = Color(0.4, 0.7, 1, 0.6)
 theme_override_font_size/font_size = 14
-text = "✦"
+text = "*"
 
 [node name="Star2" type="Label" parent="."]
 layout_mode = 0
@@ -54,7 +54,7 @@ offset_right = 620.0
 offset_bottom = 286.0
 theme_override_colors/font_color = Color(0.6, 0.5, 1, 0.7)
 theme_override_font_size/font_size = 18
-text = "✦"
+text = "*"
 
 [node name="Star3" type="Label" parent="."]
 layout_mode = 0
@@ -64,7 +64,7 @@ offset_right = 200.0
 offset_bottom = 766.0
 theme_override_colors/font_color = Color(0.4, 0.7, 1, 0.5)
 theme_override_font_size/font_size = 16
-text = "✦"
+text = "*"
 
 [node name="Star4" type="Label" parent="."]
 layout_mode = 0
@@ -74,7 +74,7 @@ offset_right = 580.0
 offset_bottom = 846.0
 theme_override_colors/font_color = Color(0.8, 0.6, 1, 0.6)
 theme_override_font_size/font_size = 14
-text = "✦"
+text = "*"
 
 [node name="HeaderContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
@@ -209,7 +209,7 @@ layout_mode = 2
 pivot_offset = Vector2(312, 34)
 text = "Get Started"
 
-[node name="SignInBtn" type="Button" parent="BottomContainer/VBox"]
+[node name="PlayBtn" type="Button" parent="BottomContainer/VBox"]
 custom_minimum_size = Vector2(0, 36)
 layout_mode = 2
-text = "Already have an account? Sign In"
+text = "Play"
